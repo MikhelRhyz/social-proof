@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.top-image {
+  width: 100%;
+  position: relative;
+  left: 13rem;
+  top: -13rem;
+}
+
+.bottom-image {
+  position: relative;
+  right: -15%;
+}
+
+.container {
+  position: absolute;
+}
+
+.top-row {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.rating-col {
+  padding-left: 6rem;
+}
+
+.rating {
+  background-color: var(--Light-Grayish-Magenta);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.rating-col .rating:nth-child(2) {
+  left: 2rem;
+}
+
+.rating-col .rating:nth-child(3) {
+  left: 4rem;
+}
+
+.rating p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.stars {
+  margin-right: 1.5rem;
+}
+
+.testimony {
+  background-color: var(--Very-Dark-Magenta);
+  margin-right: 1.5rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.profile-row {
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.verified-buyer {
+  color: var(--Soft-Pink);
+}
+
+.testimony {
+  position: relative;
+}
+
+.bottom-row .testimony:nth-child(2) {
+  top: 2rem;
+}
+
+.bottom-row .testimony:nth-child(3) {
+  top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .rating-col .rating:nth-child(2) {
+    width: 105%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .top-image {
+    left: 10vw;
+  }
+
+  .row,
+  .d-flex {
+    display: block !important;
+  }
+
+  .container{
+    top: 1rem;
+    text-align: center;
+  }
+
+  .thousand-users{
+    width: 100%;
+  }
+
+
+
+  .rating-col {
+    padding: 0;
+    width: 100%;
+  }
+
+  .rating-col .rating:nth-child(2),
+  .rating-col .rating:nth-child(3) {
+    left: 0;
+  }
+
+  .rating-col .rating:nth-child(2) {
+    width: 100%;
+  }
+
+  .profile-row{
+    display: flex!important;
+    align-items: center;
+  }
+
+  .client-name-title{
+    text-align: left;
+  }
+}
